@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6077CDCA1FB6EAA700DF64E2 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6077CDC91FB6EAA700DF64E2 /* RecordViewController.swift */; };
 		60C0C31F1FAF249E00A77C72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C0C31E1FAF249E00A77C72 /* AppDelegate.swift */; };
 		60C0C3211FAF249E00A77C72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C0C3201FAF249E00A77C72 /* ViewController.swift */; };
 		60C0C3241FAF249E00A77C72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C0C3221FAF249E00A77C72 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		60C0C3291FAF249E00A77C72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C0C3271FAF249E00A77C72 /* LaunchScreen.storyboard */; };
 		60C0C3341FAF249E00A77C72 /* NewProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C0C3331FAF249E00A77C72 /* NewProjectTests.swift */; };
 		60C0C33F1FAF249E00A77C72 /* NewProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C0C33E1FAF249E00A77C72 /* NewProjectUITests.swift */; };
+		60C0C3551FAF25F200A77C72 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C0C3541FAF25F200A77C72 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6077CDC91FB6EAA700DF64E2 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		60C0C31B1FAF249D00A77C72 /* NewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C0C31E1FAF249E00A77C72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60C0C3201FAF249E00A77C72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		60C0C33A1FAF249E00A77C72 /* NewProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C0C33E1FAF249E00A77C72 /* NewProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectUITests.swift; sourceTree = "<group>"; };
 		60C0C3401FAF249E00A77C72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60C0C3541FAF25F200A77C72 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				60C0C31E1FAF249E00A77C72 /* AppDelegate.swift */,
 				60C0C3201FAF249E00A77C72 /* ViewController.swift */,
+				6077CDC91FB6EAA700DF64E2 /* RecordViewController.swift */,
+				60C0C3541FAF25F200A77C72 /* AddViewController.swift */,
 				60C0C3221FAF249E00A77C72 /* Main.storyboard */,
 				60C0C3251FAF249E00A77C72 /* Assets.xcassets */,
 				60C0C3271FAF249E00A77C72 /* LaunchScreen.storyboard */,
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				60C0C3211FAF249E00A77C72 /* ViewController.swift in Sources */,
+				60C0C3551FAF25F200A77C72 /* AddViewController.swift in Sources */,
 				60C0C31F1FAF249E00A77C72 /* AppDelegate.swift in Sources */,
+				6077CDCA1FB6EAA700DF64E2 /* RecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y4DC22ZK3T;
 				INFOPLIST_FILE = NewProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chihiro.NewProject;
@@ -441,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y4DC22ZK3T;
 				INFOPLIST_FILE = NewProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chihiro.NewProject;
