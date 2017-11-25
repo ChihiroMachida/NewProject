@@ -68,7 +68,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="録音"/>
                                 <connections>
-                                    <action selector="recordButton" destination="JbW-FM-2lu" eventType="touchUpInside" id="91P-JO-StL"/>
+                                    <action selector="pushRecordButton" destination="JbW-FM-2lu" eventType="touchUpInside" id="MZ0-LR-IrD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfQ-QJ-4dW">
@@ -76,7 +76,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="録音停止"/>
                                 <connections>
-                                    <action selector="stopButton" destination="JbW-FM-2lu" eventType="touchUpInside" id="cua-9G-Iw6"/>
+                                    <action selector="pushStopButton" destination="JbW-FM-2lu" eventType="touchUpInside" id="Bk1-wD-1yb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsb-TK-Vls">
@@ -89,13 +89,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="再生"/>
                                 <connections>
-                                    <action selector="playButton" destination="JbW-FM-2lu" eventType="touchUpInside" id="bbm-wm-MaK"/>
+                                    <action selector="pushPlayButton" destination="JbW-FM-2lu" eventType="touchUpInside" id="loC-aP-zg4"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fhT-Dz-nfU"/>
                     </view>
+                    <connections>
+                        <outlet property="playButton" destination="QQW-3K-LXk" id="JEw-89-FaO"/>
+                        <outlet property="recordButton" destination="q2d-qv-iKW" id="R4u-XJ-SYw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMJ-7v-QQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

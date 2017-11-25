@@ -12,9 +12,12 @@ import AVFoundation
 class RecordViewController: UIViewController {
     
     let fileManager = FileManager()       //ファイルマネージャー
-    var audioRecorder = AVAudioRecorder() //レコーダー
-    var audioPlayer = AVAudioPlayer()     //プレイヤー
+    var audioRecorder : AVAudioRecorder?  //レコーダー
+    var audioPlayer : AVAudioPlayer?      //プレイヤー
     let fileName = "sample.caf"           //ファイル名
+    
+    @IBOutlet weak var recordButton: UIButton! //録音ボタン
+    @IBOutlet weak var playButton: UIButton!   //再生ボタン
 
     override func viewDidLoad() {
         
@@ -22,19 +25,19 @@ class RecordViewController: UIViewController {
         self.setupAudioRecorder()
     }
     
-    @IBAction func recordButton() { //録音ボタン
+    @IBAction func pushRecordButton() { //録音ボタン
         
-        audioRecorder.record()
+        audioRecorder?.record()
     }
     
-    @IBAction func stopButton() { //録音停止ボタン
-        
-        audioRecorder.stop()
+    @IBAction func pushStopButton() { //録音停止ボタン
+
+        audioRecorder?.stop()
     }
     
-    @IBAction func playButton() { //再生ボタン
+    @IBAction func pushPlayButton() { //再生ボタン
         
-        play()
+        self.play()
     }
     
     func setupAudioRecorder() { // 再生と録音機能をアクティブにする
@@ -49,7 +52,7 @@ class RecordViewController: UIViewController {
             AVSampleRateKey: 44100.0
         ]
         do {
-            try audioRecorder = AVAudioRecorder(url: documentFilePath(), settings: recordSetting)
+            try audioRecorder = AVAudioRecorder(url: self.documentFilePath(), settings: recordSetting)
         } catch {
             print("初期設定エラー")
         }
@@ -61,7 +64,7 @@ class RecordViewController: UIViewController {
         } catch {
             print("再生エラー")
         }
-        audioPlayer.play()
+        audioPlayer?.play()
     }
     
     func documentFilePath()-> URL { //ファイルのパスを取得
