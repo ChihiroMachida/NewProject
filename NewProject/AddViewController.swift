@@ -10,12 +10,17 @@ import UIKit
 
 class AddViewController: UIViewController {
 
+    @IBOutlet var titleTextField: UITextField!    //曲名TextField
+    @IBOutlet var musicianTextField: UITextField! //作曲者TextField
+    @IBOutlet var commentTextField: UITextField!  //コメントTextField
+    @IBOutlet var genreTextField: UITextField!    //ジャンルTextFIeld
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
     }
     
-    @IBAction func backButton() {
+    @IBAction func backButton() { //戻るButton
         
         dismiss(animated: true, completion: nil)
     }

@@ -16,8 +16,8 @@ class RecordViewController: UIViewController {
     var audioPlayer : AVAudioPlayer?      //プレイヤー
     let fileName = "sample.caf"           //ファイル名
     
-    @IBOutlet weak var recordButton: UIButton! //録音ボタン
-    @IBOutlet weak var playButton: UIButton!   //再生ボタン
+    @IBOutlet weak var recordButton: UIButton! //録音Button
+    @IBOutlet weak var playButton: UIButton!   //再生Button
 
     override func viewDidLoad() {
         
@@ -25,19 +25,19 @@ class RecordViewController: UIViewController {
         self.setupAudioRecorder()
     }
     
-    @IBAction func pushRecordButton() { //録音ボタン
+    @IBAction func pushRecordButton() { //録音Button
         
         audioRecorder?.record()
     }
     
-    @IBAction func pushStopButton() { //録音停止ボタン
+    @IBAction func pushStopButton() { //録音停止Button
 
         audioRecorder?.stop()
     }
     
-    @IBAction func pushPlayButton() { //再生ボタン
+    @IBAction func pushPlayButton() { //再生Button
         
-        self.play()
+        play()
     }
     
     func setupAudioRecorder() { // 再生と録音機能をアクティブにする
@@ -76,7 +76,7 @@ class RecordViewController: UIViewController {
         return dieUrl.appendingPathComponent(fileName)
     }
     
-    @IBAction func backButton() {
+    @IBAction func backButton() { //戻る
         
         dismiss(animated: true, completion: nil)
     }
